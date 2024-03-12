@@ -1,6 +1,6 @@
 import style from "./TodoItemComponent.module.css";
 const TodoItemComponent = (props) => {
-  const { todoItem } = props;
+  const { todoItem, deleteHandler } = props;
   return (
     <>
       <div className="container mt-4">
@@ -14,7 +14,11 @@ const TodoItemComponent = (props) => {
           </div>
 
           <div className="col">
-            <button type="button" className="btn btn-danger">
+            <button
+              onClick={() => deleteHandler(todoItem.id)}
+              type="button"
+              className="btn btn-danger"
+            >
               Delete
             </button>
           </div>

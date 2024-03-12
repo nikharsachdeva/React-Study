@@ -1,13 +1,17 @@
 import TodoItemComponent from "./TodoItemComponent";
 
 const TodoListComponent = (props) => {
-  const { todoList } = props;
+  const { todoList, deleteHandler } = props;
 
   return (
     <>
       <div className="container">
         {todoList.map((todo) => (
-          <TodoItemComponent key={todo.id} todoItem={todo} />
+          <TodoItemComponent
+            deleteHandler={deleteHandler}
+            key={todo.id}
+            todoItem={todo}
+          />
         ))}
       </div>
     </>
