@@ -1,0 +1,21 @@
+.ns-button{
+  min-width: 100px;
+}
+
+.ns-row{
+  margin: 10px 5px;
+}
+
+.todo-item-container{
+  align-items: left;
+}
+
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.heading{
+  margin-top: 20px;
+}

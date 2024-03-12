@@ -1,0 +1,12 @@
+.imgStyle{
+    width: 30px;
+    height: 30px;
+}
+
+.itemStyle{
+    margin-top: 10px;
+}
+
+.selectedStyle{
+    background-color: aqua;
+}

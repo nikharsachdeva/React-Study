@@ -1,0 +1,13 @@
+.item-text-span{
+    color: tomato;
+    font-weight: 500;
+}
+
+.item-text-span,.item-date-span{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item-date-span{
+    color:blue;
+    font-weight: 700;
+}

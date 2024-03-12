@@ -1,0 +1,7 @@
+.baseContainer{
+    width: 50%;
+    border: 1px solid rgb(113, 113, 113);
+    border-radius: 4px;
+    margin: 20px;
+    padding: 20px;
+}
