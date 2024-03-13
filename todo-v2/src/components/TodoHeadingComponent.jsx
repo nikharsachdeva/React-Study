@@ -1,6 +1,13 @@
 import { useState } from "react";
+import { IoIosAddCircle } from "react-icons/io";
 
 const TodoHeadingComponent = ({ addHandler }) => {
+  const onAddClicked = () => {
+    addHandler(currentTodo, currentDate);
+    setCurrentTodo("");
+    setCurrentDate(getDefaultDate());
+  };
+
   const getDefaultDate = () => {
     const todayDate = new Date();
     const year = todayDate.getFullYear();
@@ -59,11 +66,11 @@ const TodoHeadingComponent = ({ addHandler }) => {
 
           <div className="row">
             <button
-              onClick={() => addHandler(currentTodo, currentDate)}
+              onClick={() => onAddClicked()}
               type="button"
               className="btn btn-primary mt-4"
             >
-              Add
+              Add <IoIosAddCircle />
             </button>
           </div>
         </div>

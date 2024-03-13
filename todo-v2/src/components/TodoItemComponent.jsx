@@ -1,4 +1,6 @@
 import style from "./TodoItemComponent.module.css";
+import { MdDeleteForever } from "react-icons/md";
+
 const TodoItemComponent = (props) => {
   const { todoItem, deleteHandler } = props;
   return (
@@ -19,7 +21,7 @@ const TodoItemComponent = (props) => {
               type="button"
               className="btn btn-danger"
             >
-              Delete
+              Delete <MdDeleteForever />
             </button>
           </div>
         </div>
